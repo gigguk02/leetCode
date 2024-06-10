@@ -6,9 +6,7 @@ func longestCommonPrefix(strs []string) string {
 	prefix := strs[0]
 	for i := 1; i < len(strs); i++ {
 		for len(prefix) > 0 && (len(prefix) > len(strs[i]) || prefix != strs[i][:len(prefix)]) {
-
 			prefix = prefix[:len(prefix)-1]
-
 		}
 		if prefix == "" {
 			return ""
