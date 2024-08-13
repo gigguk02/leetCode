@@ -16,7 +16,7 @@ func rangeSum(nums []int, n int, left int, right int) int {
 		for j := i; j < n; j++ {
 			sum += nums[j]
 			newMas = append(newMas, sum)
-
+			
 		}
 		sum = 0
 
